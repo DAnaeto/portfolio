@@ -8,7 +8,10 @@ export default function Navbar() {
         <div className="left">
           <a href="#intro" className="logo">whoami</a>
         </div>
-        <div className="right"></div>
+        <div className="right">
+            <a href="#portfolio" className="rightpages">Portfolio</a>
+            <a href="#contact" className="rightpages">Contact Me</a>
+        </div>
       </div>
     </div>
   );
