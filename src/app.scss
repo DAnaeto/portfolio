@@ -6,6 +6,7 @@
     height: calc(100vh - 70px); //navbar is fixed so this accounts for navbar height
     position: relative; 
     top: 70px; //70px from the top to account for the navbar
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory; //snapping between different sections
     scrollbar-width: none; //disabling scrollbar functionality on firefox
     &::-webkit-scrollbar{ //other browsers, disabling scrollbar functionality
