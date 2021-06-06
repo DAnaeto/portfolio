@@ -1,1 +1,10 @@
 $nav_and_accents_color: #474747; 
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

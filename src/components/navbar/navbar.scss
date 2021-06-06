@@ -6,30 +6,71 @@
   background-color: white;
   position: fixed;
   top: 0;
+  z-index: 3;
   color: $nav_and_accents_color;
+  transition: all 1s ease;
+
   .wrap {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .left{
 
-
+  .left{
+        display: flex;
+        align-items: center;
         .logo{
             font-size: 40px;
             font-weight: 700;
             text-decoration: none;
             color: inherit;
+            margin-right: 40px;
         }
-    }
-    .right{
+  
+  }
+  .right{
+    .menuicon {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 10px;
 
-        .rightpages{
-            text-decoration: none;
-            font-size: 20px;
-            padding: 10px;
-            color: inherit;
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: $nav_and_accents_color;
+          transform-origin: left;
+          transition: all 1s ease;
         }
+        &:hover{
+          background-color: rgba($color: #000000, $alpha: 0.2)
+        }
+      }
+  }
+  }
+  &.active {
+    background-color: $nav_and_accents_color;
+    color: white;
+    .menuicon {
+      &:hover{
+    padding: 10px 5px 10px 12px;
+    }
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 }
