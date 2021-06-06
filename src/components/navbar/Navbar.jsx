@@ -1,4 +1,5 @@
 import React from "react";
+import {Menu} from "@material-ui/icons"
 import "./navbar.scss";
 
 
@@ -15,9 +16,7 @@ export default function Navbar(props) {
         </div>
         <div className="right">
           <div className="menuicon" onClick={() => props.setMenuOpen(!props.menuOpen)}>
-            <span className="topline"></span>
-            <span className="midline"></span>
-            <span className="botline"></span>
+            <Menu />
           </div>
         </div>
       </div>
