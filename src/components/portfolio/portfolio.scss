@@ -4,7 +4,7 @@
 .portfolio{
     background-color: white;
     display: flex;
-    margin-top: 25px;
+    margin-top: 35px;
     flex-direction: column;
     align-items: center;
     h1{
@@ -15,20 +15,9 @@
         padding: 0px;
         list-style: none;
         display: flex;
-        margin-top: 10px;
+        margin-top: 20px;
         
-        li{
-            font-size: 14px;
-            padding: 7px;
-            border-radius: 10px;
-            margin-right: 50px;
-            cursor: pointer;
-            
-            &.active{
-                background-color: $nav_and_accents_color;
-                color: white;
-            }
-        }
+        
         #last{
                 margin-right: 0px;
             }
@@ -43,7 +32,7 @@
             width: 250px;
             border-radius: 20px;
             border: 1px solid lightsalmon;
-            margin: 10px 20px;
+            margin: 20px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
