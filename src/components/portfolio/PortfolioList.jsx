@@ -7,7 +7,7 @@ export default function PortfolioList(props) {
         props.changeSelected(props.id)
     }
     return (
-        <li className={props.active ? "portfoliolist active" : "portfoliolist"} onClick={selectedItemHandler}>
+        <li className={props.active ? "portfoliolist active" : "portfoliolist"} id={props.id} onClick={selectedItemHandler}>
             {props.title}
         </li>
     )
