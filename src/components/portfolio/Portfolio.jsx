@@ -5,24 +5,32 @@ export default function Portfolio() {
     const data = [
     {
         id: '1',
-            title: "Web design",
-        icon: 'path',
-        desc: 'Hello',
-        img: 'hello'
+        title: "Education",
+        icon: 'sources/mortarboard.png',
+        desc: 'University of Connecticut',
+        extra: 'Major: Computer Science'
     },
     {
         id: '2',
-        title: 'Cyber',
-        icon: 'path',
-        desc: "Hello",
-        img: "hello"
+        title: 'Work Experience',
+        icon: 'sources/portfolio.png',
+      desc: "Cisco Meraki",
+        extra: 'Software QA Engineer Intern'
     },
     {
         id: '3',
-        title: 'School',
-        icon: 'path',
-        desc: "Hello",
-        img: 'hello'
+        title: 'Relevant Courses',
+        icon: 'sources/online-course.png'
+    },
+    {
+      id: '4',
+      title: 'Clubs',
+      icon: 'sources/network.png'
+    },
+    {
+      id: '5',
+      title: 'Technical Skills',
+      icon: 'sources/pencil.png'
     }
     ]
     const clickHandler = (num) => { //0 is left 1 is right
@@ -48,11 +56,11 @@ export default function Portfolio() {
                 <div className="left">
                   <div className="leftContaine">
                     <div className="imgContainer">
-                      <img src={item.icon} alt="" />
+                      <img src={item.icon} alt="Icon" style={{ height: `50px` }}/>
                     </div>
                     <h2>{item.title}</h2>
-                    <p>{item.desc}</p>
-                    <span>Projects</span>
+                    { item['desc'] ? <p>{item.desc}</p> : <div></div> }
+                    { item['extra'] ? <span>{item.extra}</span> : <div></div> }
                   </div>
                 </div>
                 <div className="right"></div>
