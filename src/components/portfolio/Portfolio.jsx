@@ -1,71 +1,77 @@
-import { React, useState, useEffect } from 'react'
+import {React, useState} from 'react'
 import './portfolio.scss'
-import PortfolioList from './PortfolioList';
-import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio } from '../../data.js'
 
 export default function Portfolio() {
-  const [selectedItem, setSelectedItem] = useState("education");
-   const [data, setData] = useState([]);
-  const list = [
+    const data = [
     {
-      id: "education",
-      title: "Education"
+        id: '1',
+            title: "Web design",
+        icon: 'path',
+        desc: 'Hello',
+        img: 'hello'
     },
     {
-      id: "experience",
-      title: "Experience"
+        id: '2',
+        title: 'Cyber',
+        icon: 'path',
+        desc: "Hello",
+        img: "hello"
     },
     {
-      id: "courses",
-      title: "Relevant Courses"
-    },
-    {
-      id: "resume",
-      title: "Resume"
+        id: '3',
+        title: 'School',
+        icon: 'path',
+        desc: "Hello",
+        img: 'hello'
     }
-  ]
-  
-  useEffect(() => {
-    switch (selectedItem) {
-      case "education":
-        setData(featuredPortfolio);
-        break;
-      case "experience":
-        setData(webPortfolio);
-        break;
-      case "courses":
-        setData(mobilePortfolio);
-        break;
-      case "resume":
-        setData(designPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-        break;
+    ]
+    const clickHandler = (num) => { //0 is left 1 is right
+        if (num === 0) {
+            setCurrentSlide(
+              currentSlide > 0 ? currentSlide - 1 : data.length - 1
+            );
+        }
+        else {
+            setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0)
+        }   
     }
-    
-  }, [selectedItem])
-
-   
+    const [currentSlide, setCurrentSlide] = useState(0)
     return (
       <div className="portfolio" id="portfolio">
-        <h1>Portfolio</h1>
-        <ul>
-          {list.map(item => (
-              <PortfolioList title={item.title} active={selectedItem === item.id} changeSelected={setSelectedItem} id={item.id }/>
-            ))}
-        </ul>
-        <div className="container">
-          {data.map(item => (
-            <div className="item">
-            <img
-                src={item.img}
-              alt="work"
-              />
-              <h3>{item.title}</h3>
-          </div>
-              ))}
+        <div
+          className="slider"
+          style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+        >
+          {data.map((item) => (
+            <div className="container">
+              <div className="item">
+                <div className="left">
+                  <div className="leftContaine">
+                    <div className="imgContainer">
+                      <img src={item.icon} alt="" />
+                    </div>
+                    <h2>{item.title}</h2>
+                    <p>{item.desc}</p>
+                    <span>Projects</span>
+                  </div>
+                </div>
+                <div className="right"></div>
+              </div>
+            </div>
+          ))}
         </div>
+        <img
+          src="sources/arrow.png"
+          alt="Left arrow"
+          className="left arrow"
+          onClick={() => clickHandler(0)}
+        />
+        <img
+          src="sources/arrow.png"
+          alt="Right arrow"
+          className="right arrow"
+          onClick={() => clickHandler(1)}
+        />
       </div>
     );
 }

@@ -11,17 +11,24 @@
     overflow: hidden;
 
     .images {
-      height: 700px;
+      right: 100px;
+      top: 100px;
+      height: 725px;
       position: relative;
       float: right;
       background-color: rgb(255, 225, 57);
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
-      justify-content: center;
       float: right;
       @include mobile{
+        background-color: white;
         align-items: flex-start;
+        height: 70%;
+        justify-content: center;
+        right: 40px;
+        overflow: hidden;
+        position: absolute;
       }
       img {
         height: 90%;
@@ -29,6 +36,8 @@
         left: 25px;
         @include mobile{
           height: 60%;
+          justify-content: center;
+          overflow: hidden;
         }
       }
     }
@@ -42,6 +51,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: center;
       @include mobile{
         padding-left: 0;
         align-items: center;

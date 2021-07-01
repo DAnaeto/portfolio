@@ -29,7 +29,7 @@ export default function Introduction() {
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="sources/down.png" alt="Down arrow to go to next section" />
+          <img src="sources/arrow.png" alt="Down arrow to go to next section" />
         </a>
       </div>
     </div>
