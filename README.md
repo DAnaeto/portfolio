@@ -17,3 +17,11 @@ npm install && npm start
 "eject": "react-scripts eject",
 "heroku-postbuild": "npm run build"
 ```
+
+- To run this locally, change the scripts in package.json to
+```
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+```

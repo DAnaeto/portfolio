@@ -15,7 +15,7 @@ export default function Contact() {
     return (
       <div className="contact" id="contact">
         <div className="left">
-          <img src="sources/shake.svg" alt="A handshake" />
+          <img src="sources/shake.svg" draggable="false" alt="A handshake" />
         </div>
         <div className="right">
           <h2>Contact Me</h2>
@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="container">
               <div className="imgContainer">
                 <a href={item.url} target="_blank" rel="noreferrer">
-                  <img src={item.icon} alt="Contact logo" />
+                  <img src={item.icon} draggable="false" alt="Contact logo" />
                 </a>
               </div>
               <div className="textContainer">
