@@ -15,21 +15,17 @@ function App() {
 
   return (
     <Router>
-      <Route
-        path="/"
-        exact
-        render={(props) => (
-          <div className="app">
-            <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <div className="sections">
-              <Introduction />
-              <Portfolio />
-              <Contact />
-            </div>
-          </div>
-        )}
-      />
+      <Route path="/" exact />
+      <div className="app">
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <div className="sections">
+          <Introduction />
+          <Portfolio />
+          <Contact />
+        </div>
+      </div>
+      <Route />
     </Router>
   );
 }
