@@ -33,11 +33,7 @@ export default function Portfolio() {
                     />
                   </div>
                   <h2>{item.title}</h2>
-                  {item["description"] ? (
-                    <p>{item.description}</p>
-                  ) : (
-                    <></>
-                  )}
+                  {item["description"] ? <p>{item.description}</p> : <></>}
                   {item["extra"] ? <span>{item.extra}</span> : <></>}
                 </div>
               </div>
@@ -60,14 +56,13 @@ export default function Portfolio() {
         className="right arrow"
         onClick={() => clickHandler(1)}
       />
-      <a href="#contact">
-          <img
-            src="sources/arrow.png"
-            draggable="false"
-            alt="Down arrow to go to next section"
-          />
-        </a>
-        
+      <a href="#contact" className="next">
+        <img
+          src="sources/arrow.png"
+          draggable="false"
+          alt="Down arrow to go to next section"
+        />
+      </a>
     </div>
   );
 }

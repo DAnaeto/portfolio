@@ -9,19 +9,14 @@ npm install && npm start
 ```
 
 ### Note
-- To run this in Heroku, change the scripts in package.json to
-```
-"dev": "react-scripts start",
-"start": "serve -s build",
-"test": "react-scripts test --env=jsdom",
-"eject": "react-scripts eject",
-"heroku-postbuild": "npm run build"
-```
+- To run this in Heroku, add this buildpack
+https://github.com/mars/create-react-app-buildpack
 
-- To run this locally, change the scripts in package.json to
-```
-"start": "react-scripts start",
-"build": "react-scripts build",
-"test": "react-scripts test",
-"eject": "react-scripts eject"
-```
+- To run this locally, follow these steps:
+
+1. Clone this project
+2. Run ```npm install```
+3. Run ```npm start```
+
+
+Note: For the best UX, use a browser and disable dark mode extensions such as Dark Reader.

@@ -4,7 +4,6 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 
-import { Route, BrowserRouter as Router } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -14,8 +13,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Router>
-      <Route path="/" exact />
+   
       <div className="app">
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -25,8 +23,6 @@ function App() {
           <Contact />
         </div>
       </div>
-      <Route />
-    </Router>
   );
 }
 

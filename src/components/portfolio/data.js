@@ -88,6 +88,7 @@ export const data = [
         <p className="desc">
           <a
             href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3140"
+            className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -97,6 +98,7 @@ export const data = [
         <p className="desc">
           <a
             href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3300"
+            className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -106,6 +108,7 @@ export const data = [
         <p className="desc">
           <a
             href="https://catalog.uconn.edu/directory-of-courses/course/cse/#4300"
+            className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -115,6 +118,7 @@ export const data = [
         <p className="desc">
           <a
             href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3400"
+            className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -124,6 +128,7 @@ export const data = [
         <p className="desc">
           <a
             href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3500"
+            className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -133,6 +138,7 @@ export const data = [
         <p className="desc">
           <a
             href="https://gradcatalog.uconn.edu/course-descriptions/course/CSE/#5095"
+            className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -152,6 +158,7 @@ export const data = [
         <p className="desc">
           Hackathon - UConn CyberSEED <span>(March 2021)</span>
         </p>
+        <p className="desc">CTF Challenges</p>
         <p className="desc">Intramural Volleyball & Intramural Basketball</p>
         <h3>Clubs</h3>
         <p className="desc indent">
