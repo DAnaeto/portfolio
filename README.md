@@ -16,4 +16,4 @@
 
 ---
 
-_For the best UX, do not use a mobile device and disable dark mode extensions such as Dark Reader._
+_For the best UX, do *not* use a mobile device and *disable* dark mode extensions such as Dark Reader._
