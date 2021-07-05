@@ -17,7 +17,11 @@ export default function Introduction() {
     <div className="introduction" id="intro">
       <div className="left">
         <div className="images">
-          <img src="sources/portrait.png" draggable="false" alt="Portrait of me" />
+          <img
+            src="sources/portrait.png"
+            draggable="false"
+            alt="Portrait of me"
+          />
         </div>
       </div>
       <div className="right">
@@ -29,7 +33,11 @@ export default function Introduction() {
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="sources/arrow.png" draggable="false" alt="Down arrow to go to next section" />
+          <img
+            src="sources/arrow.png"
+            draggable="false"
+            alt="Down arrow to go to next section"
+          />
         </a>
       </div>
     </div>

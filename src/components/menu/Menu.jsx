@@ -10,19 +10,13 @@ export default function Menu(props) {
     <div className={"menu " + (props.menuOpen && "active")}>
       <ul>
         <li onClick={clickHandler}>
-          <a href="#intro">
-            About Me
-          </a>
+          <a href="#intro">About Me</a>
         </li>
         <li onClick={clickHandler}>
-          <a href="#portfolio">
-            Portfolio
-          </a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={clickHandler}>
-          <a href="#contact">
-            Contact Me
-          </a>
+          <a href="#contact">Contact Me</a>
         </li>
       </ul>
     </div>

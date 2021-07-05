@@ -1,77 +1,77 @@
 @import "../../global.scss";
 
-.contact{
-    background-color: white;
+.contact {
+  background-color: white;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+  .left {
+    flex: 1;
+    overflow: hidden;
+    img {
+      height: 100%;
+      overflow: hidden;
+      @include mobile {
+        justify-content: center;
+      }
+    }
+  }
+  .right {
+    flex: 1;
     display: flex;
-    @include mobile{
-      flex-direction: column;
-    }
-    .left{
-      flex: 1;
-      overflow:hidden;
-      img{
-        height: 100%;
-        overflow: hidden;
-        @include mobile{
-          justify-content: center;
-        }
-      }
-    }
-    .right{
-      flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .container {
+      width: 60%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      .container{
-        width: 60%;
-        display: flex;
-        border: 3px dashed black;
-        border-radius: 50px;
-        @include mobile{
-          width: 75%;
-          border: none;
-        }
-        .imgContainer{
-          flex: 2;
-          padding: 20px 0;
-          overflow: hidden;
-          img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50px;
-          }
-        }
-        .textContainer{
-          margin: auto;
-          padding: 20px 0;
-          flex: 8;
-          justify-content: center;
-          text-align: center;
-          @include mobile{
-            padding: 5px 0;
-          }
-            p{
-              font-size: 30px;
-              @include mobile{
-                font-size: 20px;
-              }
-              a{
-                text-decoration: none;
-                color: black;
-            }
-          }
+      border: 3px dashed black;
+      border-radius: 50px;
+      @include mobile {
+        width: 75%;
+        border: none;
+      }
+      .imgContainer {
+        flex: 2;
+        padding: 20px 0;
+        overflow: hidden;
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50px;
         }
       }
-
-      h2{
-        font-size: 50px;
-        font-weight: 500;
-        @include mobile{
-          font-size: 40px;
-          overflow: hidden;
+      .textContainer {
+        margin: auto;
+        padding: 20px 0;
+        flex: 8;
+        justify-content: center;
+        text-align: center;
+        @include mobile {
+          padding: 5px 0;
+        }
+        p {
+          font-size: 30px;
+          @include mobile {
+            font-size: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+          }
         }
       }
     }
+
+    h2 {
+      font-size: 50px;
+      font-weight: 500;
+      @include mobile {
+        font-size: 40px;
+        overflow: hidden;
+      }
+    }
+  }
 }

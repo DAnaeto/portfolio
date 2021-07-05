@@ -2,7 +2,7 @@
 .introduction {
   background-color: white;
   display: flex;
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
@@ -11,9 +11,9 @@
     overflow: hidden;
 
     .images {
-      right: 100px;
-      top: 100px;
-      height: 725px;
+      right: 50px;
+      top: 75px;
+      height: 650px;
       position: relative;
       float: right;
       background-color: rgb(255, 225, 57);
@@ -21,7 +21,7 @@
       display: flex;
       align-items: flex-end;
       float: right;
-      @include mobile{
+      @include mobile {
         background-color: white;
         align-items: flex-start;
         height: 70%;
@@ -34,7 +34,7 @@
         height: 90%;
         position: relative;
         left: 25px;
-        @include mobile{
+        @include mobile {
           height: 60%;
           justify-content: center;
           overflow: hidden;
@@ -52,20 +52,20 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      @include mobile{
+      @include mobile {
         padding-left: 0;
         align-items: center;
       }
       h1 {
-        font-size: 70px;
+        font-size: 60px;
         margin: 10px 0;
-        @include mobile{
+        @include mobile {
           font-size: 40px;
         }
       }
       h3 {
-        font-size: 47px;
-        @include mobile{
+        font-size: 40px;
+        @include mobile {
           font-size: 30px;
         }
         span {
@@ -73,7 +73,7 @@
           color: rgb(211, 179, 0);
         }
         .ityped-cursor {
-          font-size: 2.2rem;
+          font-size: 2.0rem;
           opacity: 1;
           -webkit-animation: blink 0.5s infinite;
           -moz-animation: blink 0.5s infinite;
@@ -106,7 +106,7 @@
     a {
       position: absolute;
       bottom: 10px;
-      @include mobile{
+      @include mobile {
         position: absolute;
         bottom: 10px;
         left: 40%;
