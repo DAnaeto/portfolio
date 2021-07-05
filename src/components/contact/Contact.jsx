@@ -36,28 +36,20 @@ export default function Contact() {
       <div className="right">
         <h2>Contact Me</h2>
         {data.map((item) => (
-          <div className="container">
-            <div className="imgContainer">
-              <a href={item.url} target="_blank" rel="noreferrer">
+          <a href={item.url} target="_blank" rel="noreferrer">
+            <div className="container">
+              <div className="imgContainer">
                 <img src={item.icon} draggable="false" alt="Contact logo" />
-              </a>
+              </div>
+              <div className="textContainer">
+                {item.title === "Email" ? (
+                  <p>Email me!</p>
+                ) : (
+                  <p>Visit my {item.title}</p>
+                )}
+              </div>
             </div>
-            <div className="textContainer">
-              {item.title === "Email" ? (
-                <p>
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    Email me!
-                  </a>
-                </p>
-              ) : (
-                <p>
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    Visit my {item.title}
-                  </a>
-                </p>
-              )}
-            </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
