@@ -19,4 +19,5 @@ https://github.com/mars/create-react-app-buildpack
 3. Run ```npm start```
 
 
-Note: For the best UX, use a browser and disable dark mode extensions such as Dark Reader.
+
+For the best UX, use a browser and disable dark mode extensions such as Dark Reader.
