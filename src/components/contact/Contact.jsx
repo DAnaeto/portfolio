@@ -10,7 +10,7 @@ export default function Contact() {
       id: "1",
       title: "LinkedIn",
       icon: "sources/linkedin.png",
-      url: "https://www.linkedin.com/in/dominic-anaeto-8b216b1a4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoTlic3q6Tui0PA42BzoTow%3D%3D",
+      url: "https://www.linkedin.com/in/dominicanaeto",
     },
 
     {
