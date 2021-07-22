@@ -24,7 +24,7 @@ export const data = [
     title: "Work Experience",
     icon: "sources/portfolio.png",
     description: "Cisco Meraki",
-    extra: "Software QA Engineer Intern",
+    extra: "Software Engineer Intern",
     information: (
       <div className="rightContainer">
         <p className="desc">Built a project using Ruby on Rails</p>
@@ -35,7 +35,13 @@ export const data = [
           Formulated solutions to problems using data structures and OOP
         </p>
         <p className="desc">
+          Applied JQuery for responsiveness and additional functionality
+        </p>
+        <p className="desc">
           Used Git for version control and Jira for bug and progress tracking
+        </p>
+        <p className="desc">
+          Implemented Docker for portability and consistency
         </p>
         <p className="desc">
           Integrated an external PostgreSQL database and configured a MongoDB
@@ -44,9 +50,6 @@ export const data = [
         <p className="desc">
           Incorporated Cron to periodically run a script that updates a local
           MongoDB database
-        </p>
-        <p className="desc">
-          Briefed mentors at daily meetings, and presented at biweekly meetings
         </p>
       </div>
     ),
