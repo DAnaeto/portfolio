@@ -9,7 +9,7 @@ export default function Introduction() {
     init(text.current, {
       showCursor: true,
       backDelay: 1500,
-      strings: ["Analyst", "Engineer"],
+      strings: ["Engineer", "Developer"],
     });
   }, []);
 
@@ -29,7 +29,7 @@ export default function Introduction() {
           <h2>Hello, I am</h2>
           <h1>Dominic Anaeto</h1>
           <h3>
-            Cybersecurity <span ref={text}></span>
+            Software <span ref={text}></span>
           </h3>
         </div>
         <a href="#portfolio">

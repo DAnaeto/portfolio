@@ -64,20 +64,18 @@ export const data = [
           Strong understanding of Windows and Unix environments
         </p>
         <p className="desc">
+          Hands on experience with Ruby, Python, C, and more
+        </p>
+        <p className="desc">
+          Knowledge of data structures and algorithms
+        </p>
+        <p className="desc">
           Deep understanding of networking concepts (TCP/IP model, DNS, DHCP,
           NAT, BGP, etc.)
         </p>
         <p className="desc">Understanding of the OWASP Top Ten</p>
         <p className="desc">Knowledge of the MVC framework</p>
-        <p className="desc">
-          Hands on experience with tools such as Wireshark, Nmap, Metasploit,
-          Burp Suite, GDB, etc.
-        </p>
         <p className="desc">Hands on development with ReactJS</p>
-        <p className="desc">
-          Experience deploying AWS instances, configuring security groups, and
-          resizing instances
-        </p>
       </div>
     ),
   },
