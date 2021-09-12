@@ -11,7 +11,7 @@ export const data = [
         <p className="desc">Minor in Mathematics</p>
         <h3>Certifications</h3>
         <p className="desc indent">
-          CompTIA Security+ <span>(expected in August 2021)</span>
+          CompTIA Security+ <span>(expected in October 2021)</span>
         </p>
         <p className="desc indent">
           CCNA <span>(expected in January 2022)</span>
