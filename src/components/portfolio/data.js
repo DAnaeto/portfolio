@@ -66,9 +66,7 @@ export const data = [
         <p className="desc">
           Hands on experience with Ruby, Python, C, and more
         </p>
-        <p className="desc">
-          Knowledge of data structures and algorithms
-        </p>
+        <p className="desc">Knowledge of data structures and algorithms</p>
         <p className="desc">
           Deep understanding of networking concepts (TCP/IP model, DNS, DHCP,
           NAT, BGP, etc.)
@@ -98,12 +96,12 @@ export const data = [
         </p>
         <p className="desc">
           <a
-            href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3300"
+            href="https://catalog.uconn.edu/directory-of-courses/course/math/#2210Q"
             className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Computer Networks and Data Communication
+            Applied Linear Algebra
           </a>
         </p>
         <p className="desc">
@@ -118,12 +116,12 @@ export const data = [
         </p>
         <p className="desc">
           <a
-            href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3400"
+            href="https://catalog.uconn.edu/directory-of-courses/course/cse/#2500"
             className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Introduction to Computer and Network Security
+            Introduction to Discrete Systems
           </a>
         </p>
         <p className="desc">
