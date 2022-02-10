@@ -7,15 +7,9 @@ export const data = [
     information: (
       <div className="rightContainer">
         <p className="desc">Expected B.S. in May 2022</p>
-        <p className="desc">Major in Computer Science</p>
-        <p className="desc">Minor in Mathematics</p>
-        <h3>Certifications</h3>
-        <p className="desc indent">
-          CompTIA Security+ <span>(expected in October 2021)</span>
-        </p>
-        <p className="desc indent">
-          CCNA <span>(expected in January 2022)</span>
-        </p>
+        <p className="desc">Majored in Computer Science</p>
+        <p className="desc indent">Concentration in Systems & Networks</p>
+        <p className="desc">Minored in Mathematics</p>
       </div>
     ),
   },
@@ -56,6 +50,29 @@ export const data = [
   },
   {
     id: 3,
+    title: "Projects",
+    icon: "sources/project-management.png",
+    information: (
+      <div className="rightContainer">
+        <h3>
+          COVID-19 Infection Rate Modeling <span>(2021 - present)</span>
+        </h3>
+        <p className="desc indent">
+          Utilized Python to model COVID-19 infection rates using LSTMs.
+        </p>
+
+        <h3>
+          Smart Home Application <span>(2021)</span>
+        </h3>
+        <p className="desc indent">
+          Designed a web application using React Native, which allowed users to
+          connect to a temperature and humidity monitoring system.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: 4,
     title: "Technical Skills",
     icon: "sources/pencil.png",
     information: (
@@ -66,32 +83,40 @@ export const data = [
         <p className="desc">
           Hands on experience with Ruby, Python, C, and more
         </p>
-        <p className="desc">Knowledge of data structures and algorithms</p>
+        <p className="desc">
+          Knowledge of data structures and algorithms and their applications
+        </p>
         <p className="desc">
           Deep understanding of networking concepts (TCP/IP model, DNS, DHCP,
           NAT, BGP, etc.)
         </p>
         <p className="desc">Understanding of the OWASP Top Ten</p>
         <p className="desc">Knowledge of the MVC framework</p>
-        <p className="desc">Hands on development with ReactJS</p>
+        <p className="desc">
+          Hands on development with ReactJS & Ruby on Rails
+        </p>
+        <p className="desc">
+          Systems design knowledge, such as microservices, load balancing,
+          scalability, sharding, etc.
+        </p>
       </div>
     ),
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Relevant Courses",
     icon: "sources/online-course.png",
     information: (
       <div className="rightContainer">
         <p className="desc">
           <a
-            href="https://catalog.uconn.edu/directory-of-courses/course/cse/#3140"
+            href="https://catalog.uconn.edu/directory-of-courses/course/cse/#4705"
             className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Cybersecurity Lab
+            Artificial Intelligence
           </a>
         </p>
         <p className="desc">
@@ -136,12 +161,12 @@ export const data = [
         </p>
         <p className="desc">
           <a
-            href="https://gradcatalog.uconn.edu/course-descriptions/course/CSE/#5095"
+            href="https://catalog.uconn.edu/directory-of-courses/course/cse/#4820"
             className="courses"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Architecture of IoT
+            Introduction to Machine Learning
           </a>
         </p>
       </div>
@@ -149,7 +174,7 @@ export const data = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Extracurricular Activities",
     icon: "sources/network.png",
     information: (

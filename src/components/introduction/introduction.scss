@@ -26,7 +26,7 @@
         align-items: flex-start;
         height: 70%;
         justify-content: center;
-        right: 40px;
+        right: 0;
         overflow: hidden;
         position: absolute;
       }
@@ -55,6 +55,17 @@
       @include mobile {
         padding-left: 0;
         align-items: center;
+      }
+      .mobile-note{
+        @include mobile{
+        font-size: 12px;
+        padding: 5px;
+        font-weight: 400;
+        border: 1px solid black;
+        border-radius: 50px;
+        width: 80%;
+        margin-top: 30px;
+        }
       }
       h1 {
         font-size: 60px;

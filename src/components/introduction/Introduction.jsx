@@ -1,4 +1,5 @@
 import { React, useEffect, useRef } from "react";
+import { isMobile } from "react-device-detect";
 import { init } from "ityped";
 import "./introduction.scss";
 
@@ -31,6 +32,9 @@ export default function Introduction() {
           <h3>
             Software <span ref={text}></span>
           </h3>
+          {isMobile ? (
+            <p className="mobile-note">Note: For the best UX, visit this website on a laptop/desktop!</p>
+          ) : null}
         </div>
         <a href="#portfolio">
           <img
