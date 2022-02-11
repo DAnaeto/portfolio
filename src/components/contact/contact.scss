@@ -9,12 +9,12 @@
   .left {
     flex: 1;
     overflow: hidden;
+    @include mobile{
+      display: flex;
+    }
     img {
       height: 100%;
       overflow: hidden;
-      @include mobile {
-        justify-content: center;
-      }
     }
   }
   .right {

@@ -33,7 +33,7 @@ export default function Introduction() {
             Software <span ref={text}></span>
           </h3>
           {isMobile ? (
-            <p className="mobile-note">Note: For the best UX, visit this website on a laptop/desktop!</p>
+            <p className="mobile-note">Note: For the best UX, visit this website on a laptop/desktop! UI enhancements for mobile are in the works.</p>
           ) : null}
         </div>
         <a href="#portfolio">
